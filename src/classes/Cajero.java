@@ -3,10 +3,11 @@ package classes;
 public class Cajero {
 	int maxPedidos;
 	int pedidosRealizados = 0;
+
 	public Cajero(int maxPedidos) {
 		this.maxPedidos = maxPedidos;
 	}
-	
+
 	public void hacerPedido() {
 		pedidosRealizados++;
 	}
@@ -18,5 +19,5 @@ public class Cajero {
 	public int getPedidosRealizados() {
 		return pedidosRealizados;
 	}
-	
+
 }

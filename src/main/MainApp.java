@@ -1,12 +1,8 @@
 package main;
 
-import javax.swing.JOptionPane;
+import classes.*;
 
-import classes.Cajero;
-import classes.Cono;
-import classes.Pedido;
-import classes.Pote;
-import classes.Vaso;
+import javax.swing.*;
 
 public class MainApp {
 
@@ -25,7 +21,7 @@ public class MainApp {
 					c1.hacerPedido();
 					fin = true;
 				} else {
-					JOptionPane.showMessageDialog(null, "La caja seleccionada no puede tomar más pedidos por hoy");
+					JOptionPane.showMessageDialog(null, "La caja seleccionada no puede tomar mï¿½s pedidos por hoy");
 				}
 				break;
 			case 2:
@@ -33,7 +29,7 @@ public class MainApp {
 					c2.hacerPedido();
 					fin = true;
 				} else {
-					JOptionPane.showMessageDialog(null, "La caja seleccionada no puede tomar más pedidos por hoy");
+					JOptionPane.showMessageDialog(null, "La caja seleccionada no puede tomar mï¿½s pedidos por hoy");
 				}
 				break;
 			case 3:
@@ -41,17 +37,17 @@ public class MainApp {
 					c3.hacerPedido();
 					fin = true;
 				} else {
-					JOptionPane.showMessageDialog(null, "La caja seleccionada no puede tomar más pedidos por hoy");
+					JOptionPane.showMessageDialog(null, "La caja seleccionada no puede tomar mï¿½s pedidos por hoy");
 				}
 				break;
 			default:
-				JOptionPane.showMessageDialog(null, "Caja inválida, por favor elija una de las 3 cajas disponibles");
+				JOptionPane.showMessageDialog(null, "Caja invï¿½lida, por favor elija una de las 3 cajas disponibles");
 				break;
 			}
 			fin = false;
 
 			while (!fin) {
-				tipo = Integer.parseInt(JOptionPane.showInputDialog("Qué desea pedir?\n1 - Cono\n2 - Vaso\n3 - Pote"));
+				tipo = Integer.parseInt(JOptionPane.showInputDialog("Quï¿½ desea pedir?\n1 - Cono\n2 - Vaso\n3 - Pote"));
 
 				switch (tipo) {
 				case 1:
@@ -83,12 +79,12 @@ public class MainApp {
 					break;
 
 				default:
-					JOptionPane.showMessageDialog(null, "Operación incorrecta");
+					JOptionPane.showMessageDialog(null, "Operaciï¿½n incorrecta");
 					break;
 				}
 
 				if (Integer.parseInt(JOptionPane.showInputDialog(
-						"Desea pedir algo mas? (Recuerde que si pide un producto que ya pidió, éste se sobreescribirá,\n. De otra forma, podríamos agregar instancias de'\nPedidos y más helados a cada Pedido)\n1 - Sí\n2 - No")) != 1) {
+						"Desea pedir algo mas? (Recuerde que si pide un producto que ya pidiï¿½, ï¿½ste se sobreescribirï¿½,\n. De otra forma, podrï¿½amos agregar instancias de'\nPedidos y mï¿½s helados a cada Pedido)\n1 - Sï¿½\n2 - No")) != 1) {
 					fin = true;
 				}
 			}
